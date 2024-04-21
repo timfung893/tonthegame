@@ -46,7 +46,7 @@ const Hero = () => (
             <motion.button
               whileTap={{ scale: 0.85 }}
               whileHover={{ scaleX: 1.05 }}
-              className="sm:w-[250px] w-[150px] sm:h-[55px] h-[25px] hero-gradient rounded text-white"
+              className="sm:w-[270px] w-[150px] sm:h-[55px] h-[45px] hero-gradient rounded-[32px] text-white"
             >
               <TypingText title="Explore Characters" textStyles="text-center text-white sm:text-[25px]" />
             </motion.button>
