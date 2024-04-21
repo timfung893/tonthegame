@@ -29,8 +29,8 @@ const Hero = () => (
         </motion.div>
       </div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+      <div
+        // variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full lg:-mt-[30px] md:-mt-[18px] -mt-[15px]  2xl:pl-[480px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px]" />
@@ -52,7 +52,7 @@ const Hero = () => (
             </motion.button>
           </div>
         </a>
-      </motion.div>
+      </div>
     </motion.div>
   </section>
 );
