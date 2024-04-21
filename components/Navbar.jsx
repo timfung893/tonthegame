@@ -21,7 +21,7 @@ const Navbar = () => (
         <img className="w-[30px] ml-2" src="/toncoin-logo.png" alt="logo" />
       </div>
       <div className="flex flex-row mr-4">
-        <a href="#explore" className="font-extrabold test-[24px] text-white leading-[30px] cursor-pointer">
+        <a href="#explore" className="font-extrabold test-[24px] text-white leading-[30px] cursor-pointer md:block hidden">
           About TonAnimal
         </a>
         {/* <a href="#explore" className="font-extrabold test-[24px] text-white leading-[30px] cursor-pointer">
