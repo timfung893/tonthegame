@@ -38,7 +38,7 @@ const Hero = () => (
           src="/cover.jpg"
           alt="cover"
           className="w-full sm:h-[650px] h-[350px] object-cover lg:object-fill rounded-tl-[140px] z-10 relative shadow-2xl
-          shadow-blue-500/50 hover:shadow-cyan-700 rounded-b-[22px] transition ease-in-out delay-150 hover:scale-110"
+          shadow-blue-500/50 hover:shadow-cyan-700 rounded-b-[22px] transition ease-in-out hover:scale-110"
         />
 
         <a href="#explore">
