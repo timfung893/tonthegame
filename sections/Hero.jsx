@@ -9,20 +9,20 @@ const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0 }}
       className={`${styles.innerWidth2} mx-auto flex flex-col`}
     >
       <div className="relative z-10 flex flex-col items-center justify-center">
         <motion.h1
-          variants={textVariant(1.1)}
+          variants={textVariant(0)}
           className={styles.heroHeading}
         >
           TON ANIMAL
         </motion.h1>
         <motion.div
-          variants={textVariant(1.2)}
+          variants={textVariant(0)}
           className="flex flex-row items-center justify-center"
         >
           <span className={styles.heroDescription}> The next mini game in the TON ecosystem</span>

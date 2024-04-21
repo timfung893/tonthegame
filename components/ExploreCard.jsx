@@ -17,8 +17,8 @@ const ExploreCard = ({ id, position, stats, imgUrl, title, index, active, handle
   >
     {title === 'Unknown' ? <span className={`${active === id ? 'text-[100px] mb-' : 'text-[50px]'} text-white font-bold sm:text-[190px]`}>?</span>
       : (
-      <img src={imgUrl} alt={title} className={`${id === 'character-1' && active === id ? 'sm:object-contain' : 'sm:object-cover object-contain'} 
-        absolute w-full h-full rounded-[24px]`}
+      <img src={imgUrl} alt={title} className={`${id === 'character-1' && active === id ? 'sm:object-contain' : 'sm:object-cover'} 
+      object-contain absolute w-full h-full rounded-[24px]`}
       />
       )}
 
@@ -27,7 +27,7 @@ const ExploreCard = ({ id, position, stats, imgUrl, title, index, active, handle
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-[30px] sm:p-2 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+      <div className="absolute bottom-0 p-[30px] sm:p-2 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-[24px]">
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white flex flex-row mb-[16px]">
           <span className={`${styles.flexCenter} w-[55px] h-[55px] glassmorphism rounded-[12px] text-white font-bold mr-2`}>{position} </span>
           <span className={`${styles.flexCenter}`}>{title}</span>
