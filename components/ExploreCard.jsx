@@ -8,15 +8,16 @@ import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, position, stats, imgUrl, title, index, active, handleClick }) => (
   <motion.div
-    variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+    variants={fadeIn('right', 'spring', index * 0.5, 0.5)}
+    whileHover={{ scaleX: 1.05 }}
     className={`relative ${
       active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer]`}
     onClick={() => handleClick(id)}
   >
     {title === 'Unknown' ? <span className={`${active === id ? 'text-[100px] mb-' : 'text-[50px]'} text-white font-bold sm:text-[190px]`}>?</span>
       : (
-      <img src={imgUrl} alt={title} className={`${id === 'character-1' && active === id ? 'sm:object-contain object-contain' : 'sm:object-cover object-contain'} 
+      <img src={imgUrl} alt={title} className={`${id === 'character-1' && active === id ? 'sm:object-contain' : 'sm:object-cover object-contain'} 
         absolute w-full h-full rounded-[24px]`}
       />
       )}
