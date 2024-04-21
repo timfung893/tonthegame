@@ -11,6 +11,7 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div className="footer-gradient" />

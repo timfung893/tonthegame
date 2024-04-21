@@ -9,6 +9,7 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
     className={`${styles.xPaddings} w-full relative py-8 fixed top-0 z-10`}
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
